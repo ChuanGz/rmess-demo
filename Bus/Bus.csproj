@@ -6,4 +6,22 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Abstractions\" />
+    <None Remove="CommandBus\" />
+    <None Remove="Event\" />
+    <None Remove="Event\Core\" />
+    <None Remove="RabbitMQ\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+    <Folder Include="CommandBus\" />
+    <Folder Include="Event\" />
+    <Folder Include="Event\Core\" />
+    <Folder Include="RabbitMQ\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+  </ItemGroup>
 </Project>
